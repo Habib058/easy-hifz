@@ -1,0 +1,157 @@
+import BannerTextLine from '../assets/banner-text-line.png';
+import BannerPattern from '../assets/banner-pattern.png';
+
+const styles = {
+  banner: {
+    overflowX: 'hidden',
+    paddingTop: ['55px', '10px'],
+    paddingBottom: ['6px', null, '6px'],
+    backgroundColor: '#f1f3f4',
+    // backgroundImage: [
+    //   'linear-gradient(120deg, #E0F5FA 0%, #FFFDE6 110%)',
+    //   // `url(${BannerBG})`,
+    // ],
+    backgroundPosition: 'left top',
+    backgroundRepeat: 'no-repeat',
+    backgroundSize: 'cover',
+    container: {
+      maxWidth: ['100%', null, null, null, null, '1240px', '1440px'],
+    },
+    row: {
+      flexWrap: 'wrap',
+      display: 'flex',
+      marginLeft: '-15px',
+      marginRight: '-15px',
+    },
+    col: {
+      pl: '15px',
+      pr: '15px',
+      flex: ['1 1 100%', '1 1 100%', '1 1 100%', '0 0 50%'],
+    },
+    content: {
+      marginTop: ['30px', null, null, null, null, '40px', '40px'],
+      paddingRight: [0, 0, 0, 0, '40px', 0, 0],
+      h3: {
+        lineHeight: 1.18,
+        marginBottom: '10%',
+        color: 'black',
+        fontWeight: 'bold',
+        position: 'relative',
+        width: '100%',
+        fontSize: ['28px', '35px', null, '45px', null, '50px', '85px'],
+        maxWidth: ['500px', null, null, null, null, null, '100%'],
+        '&:before': {
+          content: '""',
+          width: ['290px', null, null, null, null, '260px', '381px'],
+          height: '15px',
+          backgroundImage: `url(${BannerTextLine})`,
+          backgroundPosition: 'center center',
+          backgroundSize: '100% 100%',
+          backgroundRepeat: 'no-repeat',
+          position: 'absolute',
+          bottom: '-15px',
+          right: ['15px', null, null, null, null, '140px', '100px'],
+          display: ['none', null, null, null, null, 'block'],
+        },
+      },
+      p: {
+        lineHeight: 2.33,
+        color: '#02073E',
+        marginTop: ['10px', null, null, '35px'],
+        fontSize: ['15px', '18px'],
+        pr: ['15px', 0],
+        br: {
+          display: ['none', null, null, null, null, 'block'],
+        },
+      },
+    },
+    over: {
+      position: 'absolute',
+      top: '20px',
+      left: '20px',
+    },
+    // player: {
+    //   width: '100%',
+    //   border: '1px solid #b8b9bb',
+    //   borderRadius: '4px',
+    // },
+    // playerForm: {
+    //   backgroundColor: '#f1f3f4',
+    //   padding: '7px',
+    //   position: 'relative',
+    //   width: '100%',
+    //   maxWidth: ['480px', null, null, '520px'],
+    //   boxShadow: '0px 10px 50px rgba(48, 98, 145, 0.08)',
+    //   marginTop: ['0px', '0px'],
+    //   height: ['69px', null, null, '69px', null, null, '69px'],
+    //   marginBottom: ['20px', '20px', null, null, '20px'],
+    // },
+    slide: {
+      position: 'relative',
+      width: '100%',
+      maxWidth: ['480px', null, null, '520px'],
+      marginTop: ['20px', '20px'],
+      marginBottom: ['0px', '0px', null, null, '0px'],
+    },
+    form: {
+      position: 'relative',
+      width: '100%',
+      maxWidth: ['480px', null, null, '520px'],
+      boxShadow: '0px 10px 50px rgba(48, 98, 145, 0.08)',
+      marginTop: ['0px', '0px'],
+      height: ['72px', null, null, '72px', null, null, '72px'],
+      marginBottom: ['20px', '20px', null, null, '20px'],
+    },
+    imageBox: {
+      display: 'flex',
+      justifyContent: ['center', null, null, 'center'],
+      marginTop: ['0px', null, null, '0'],
+    },
+    image: {
+      filter: 'contrast(150%)',
+      marginBottom: ['40px', null, null, '0px'],
+    },
+    imageInner: {
+      position: 'relative',
+      // '&:before': {
+      //   content: '""',
+      //   width: '100%',
+      //   height: '100%',
+      //   border: '2px solid #FFDC6B',
+      //   borderRadius: '5px',
+      //   top: '30px',
+      //   left: '30px',
+      //   position: 'absolute',
+      //   zIndex: 2,
+      //   display: ['none', null, 'block'],
+      //   '@media(max-width: 991px)': {
+      //     left: '10px',
+      //     top: '15px',
+      //     height: 'calc(100% - 15px)',
+      //   },
+      // },
+      '&:after': {
+        content: '""',
+        width: '302px',
+        height: '347px',
+        backgroundImage: `url(${BannerPattern})`,
+        backgroundPosition: 'center',
+        top: '-30px',
+        right: '-73px',
+        position: 'absolute',
+        zIndex: 1,
+        '@media(max-width: 991px)': {
+          right: '-10px',
+        },
+      },
+      img: {
+        position: 'relative',
+        zIndex: 9,
+        maxWidth: '100%',
+        boxShadow: '0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)',
+      },
+    },
+  },
+};
+
+export default styles;
